@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a2e">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/tv_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textSize="72sp"
+            android:textColor="#FFD700"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="48sp"
+            android:textColor="#00E5FF"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:background="#333"
+            android:layout_marginVertical="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="32dp">
+
+            <TextView
+                android:id="@+id/stat_perfect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PERFECT 0"
+                android:textSize="18sp"
+                android:textColor="#00E5FF"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/stat_great"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GREAT 0"
+                android:textSize="18sp"
+                android:textColor="#66BB6A"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/stat_good"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GOOD 0"
+                android:textSize="18sp"
+                android:textColor="#FFA726"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/stat_miss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MISS 0"
+                android:textSize="18sp"
+                android:textColor="#EF5350"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/stat_max_combo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MAX COMBO 0"
+                android:textSize="18sp"
+                android:textColor="#FFD700"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_best"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最高分: 0"
+            android:textSize="18sp"
+            android:textColor="#AAAAAA"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/tv_new_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★ NEW RECORD ★"
+            android:textSize="16sp"
+            android:textColor="#FFD700"
+            android:visibility="gone"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp">
+
+            <Button
+                android:id="@+id/btn_retry"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:text="重玩"
+                android:textSize="16sp"
+                android:layout_marginEnd="24dp" />
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:text="返回"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
