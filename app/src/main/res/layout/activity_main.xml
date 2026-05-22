@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".MainActivity">
+<!--    <com.example.eclipsa.widget.StreamerView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+    <!-- 顶部标题 -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demo"
+        android:textSize="48sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:shadowColor="#00E5FF"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="6"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"/>
+
+    <!-- 版本号（右上角） -->
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v0.1"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+    <!-- 作者（右上角） -->
+    <TextView
+        android:id="@+id/tv_au"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="作者:ELPSY510"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"/>
+    <!-- 声明（右上角） -->
+    <TextView
+        android:id="@+id/tv_warn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="仅供学习参考"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"/>
+    <!-- 声明（右上角） -->
+    <TextView
+        android:id="@+id/tv_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QQ：2496793864"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- 歌曲总数（左下角） -->
+    <TextView
+        android:id="@+id/tv_song_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="歌曲总数: 0"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 最高分（右下角） -->
+    <TextView
+        android:id="@+id/tv_best_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最高分: 0"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 注意：顺序很重要！按钮容器先定义，大圆后定义，这样大圆会覆盖在按钮上方 -->
+    <!-- 右侧按钮容器（先定义，会被后定义的大圆遮挡） -->
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:alpha="0"
+        android:layout_toEndOf="@id/circle_logo"
+        android:layout_marginStart="-150dp">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="185dp"
+            android:layout_height="50dp"
+            android:paddingStart="50dp"
+            android:text="开始"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            style="@style/GameButton" />
+
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:paddingStart="50dp"
+            android:text="设置"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            style="@style/GameButton" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:paddingStart="50dp"
+            android:text="退出"
+            android:textSize="16sp"
+            style="@style/GameButton" />
+    </LinearLayout>
+
+    <!-- 中央大圆（后定义，会覆盖在按钮容器上方） -->
+    <ImageView
+        android:id="@+id/circle_logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/circle_icon"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+</RelativeLayout>

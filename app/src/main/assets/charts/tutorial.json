@@ -1,0 +1,17 @@
+{
+  "songName": "教程曲",
+  "bpm": 120,
+  "offset": 0,
+  "endTime": 10000,
+  "difficuty": "3",
+  "bgImage": "tutorial",
+  "notes": [
+    {"tick": 480, "track": 0, "type": "tap"},
+    {"tick": 960, "track": 1, "type": "drag"},
+    {"tick": 1440, "track": 2, "type": "flick", "direction": "up"},
+    {"tick": 1920, "track": 3, "type": "hold", "duration":4800},
+    {"tick": 2400, "track": 3, "type": "tap"},
+    {"tick": 2640, "track": 3, "type": "tap"}
+
+  ]
+}
