@@ -65,7 +65,6 @@ public class GameController {
         this.judgementSystem = new JudgementSystem(scoreSystem, activeNotes, goodWindow);
         this.noteGenerator = new NoteGenerator(chartData, travelTime, judgeLineY, screenWidth);
         this.noteUpdater = new NoteUpdater(goodWindow);
-        // 注意：不再使用 endTimeMs，直接使用 totalDuration 在 start 中设置
     }
 
     // ---------------------------- 依赖注入方法 ----------------------------
